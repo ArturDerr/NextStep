@@ -1,0 +1,508 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 36px;
+}
+.block1 .main {
+  background: url("../img/main-img.png") no-repeat;
+  width: 917.479px;
+  height: 516.082px;
+}
+.block1 .main .main-text {
+  color: #FFF;
+  padding: 60px;
+  font-family: Unbounded;
+  font-size: 3.438em;
+  font-style: normal;
+  font-weight: 700;
+  margin-bottom: -50px;
+  line-height: 60px;
+}
+.block1 .main .text {
+  color: #FFF;
+  font-family: Montserrat;
+  margin-left: 60px;
+  font-size: 1.438em;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 25px;
+}
+.block1 .main .buttons {
+  display: flex;
+  padding: 30px 60px;
+}
+.block1 .main .buttons .button-test {
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  width: 150px;
+  height: 35px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.block1 .main .buttons .button-test:hover {
+  border: none;
+  background: #0D00FF;
+  transition: 0.4s;
+}
+.block1 .main .buttons .button-test:hover p {
+  color: #ffffff;
+  margin-top: 10px;
+}
+.block1 .main .buttons .button-test p {
+  color: #ffffff;
+  margin-top: 9px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 700;
+}
+.block1 .main .buttons .button-ai {
+  cursor: pointer;
+  background: #E6E6E6;
+  margin-left: 8px;
+  width: 190px;
+  height: 35px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.block1 .main .buttons .button-ai:hover {
+  background: #0D00FF;
+  transition: 0.4s;
+}
+.block1 .main .buttons .button-ai:hover p {
+  color: #ffffff;
+}
+.block1 .main .buttons .button-ai p {
+  color: #000000;
+  margin-top: 9px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 0.75em;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.block2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.block2 .main2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block2 .main2 #text-m {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.block2 .main2 #text-m p {
+  color: #000000;
+  font-family: Unbounded;
+  font-size: 1.75em;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block2 .main2 .carts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block2 .main2 .carts .cart1 {
+  cursor: pointer;
+  width: 305px;
+  height: 454.786px;
+  background: url("../img/cart1.png");
+  transition: 0.4s;
+}
+.block2 .main2 .carts .cart1:hover {
+  transform: scale(1.1);
+  background: url("../img/cart1_selected.png");
+}
+.block2 .main2 .carts .cart1 .txt .number {
+  padding: 40px 30px;
+  color: #DBDBDB;
+  font-family: Unbounded;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block2 .main2 .carts .cart1 .txt .m-text {
+  color: #FFF;
+  font-feature-settings: "dlig" on;
+  font-family: Unbounded;
+  padding: 10px 30px;
+  margin-top: 120px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block2 .main2 .carts .cart1 .txt .text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 1.438em;
+  font-style: normal;
+  padding: 0px 30px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.block2 .main2 .carts .cart2 {
+  width: 305px;
+  cursor: pointer;
+  height: 454.786px;
+  margin-left: 10px;
+  transition: 0.4s;
+  background: url("../img/cart2.png");
+}
+.block2 .main2 .carts .cart2:hover {
+  transform: scale(1.1);
+  background: url("../img/cart2-selected.png");
+}
+.block2 .main2 .carts .cart2 .txt .number {
+  padding: 40px 30px;
+  color: #DBDBDB;
+  font-family: Unbounded;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block2 .main2 .carts .cart2 .txt .m-text {
+  color: #FFF;
+  font-feature-settings: "dlig" on;
+  font-family: Unbounded;
+  padding: 10px 30px;
+  margin-top: 120px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block2 .main2 .carts .cart2 .txt .text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 1.438em;
+  font-style: normal;
+  padding: 0px 30px;
+  font-weight: 300;
+  line-height: 25px;
+}
+.block2 .main2 .carts .cart3 {
+  width: 291px;
+  cursor: pointer;
+  height: 455px;
+  margin-left: 10px;
+  transition: 0.4s;
+  overflow: hidden;
+  background: url("../img/cart3.png") no-repeat;
+}
+.block2 .main2 .carts .cart3:hover {
+  transform: scale(1.1);
+  background: url("../img/cart3-selected.png") no-repeat;
+}
+.block2 .main2 .carts .cart3 .txt .number {
+  padding: 40px 30px;
+  color: #DBDBDB;
+  font-family: Unbounded;
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block2 .main2 .carts .cart3 .txt .m-text {
+  color: #FFF;
+  font-family: Unbounded;
+  padding: 10px 30px;
+  margin-top: 120px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block2 .main2 .carts .cart3 .txt .text {
+  color: #FFF;
+  font-family: Montserrat;
+  font-size: 1.438em;
+  font-style: normal;
+  padding: 0px 30px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.block3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 50px;
+  flex-direction: column;
+}
+.block3 .main3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block3 .main3 #text-m {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.block3 .main3 #text-m p {
+  color: #000000;
+  font-family: Unbounded;
+  font-size: 1.75em;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block3 .main3 .for {
+  display: flex;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  justify-content: flex-start;
+  align-items: center;
+}
+.block3 .main3 .for .name1 {
+  flex-shrink: 0;
+  border-radius: 20px;
+  border: 1px solid #0D00FF;
+  padding: 7px 20px;
+}
+.block3 .main3 .for .name1 p {
+  color: #0D00FF;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 700;
+}
+.block3 .main3 .for .name2 {
+  flex-shrink: 0;
+  margin-left: 7px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding: 7px 20px;
+}
+.block3 .main3 .for .name2 p {
+  color: #000000;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 700;
+}
+.block3 .main3 .for .name3 {
+  flex-shrink: 0;
+  margin-left: 7px;
+  border-radius: 20px;
+  border: 1px solid #0D00FF;
+  padding: 7px 20px;
+}
+.block3 .main3 .for .name3 p {
+  color: #0D00FF;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 700;
+}
+.block3 .main3 .for .name4 {
+  flex-shrink: 0;
+  margin-left: 7px;
+  border-radius: 20px;
+  border: 1px solid #000000;
+  padding: 7px 20px;
+}
+.block3 .main3 .for .name4 p {
+  color: #000000;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 700;
+}
+.block3 .main3 .for .name5 {
+  flex-shrink: 0;
+  margin-left: 7px;
+  border-radius: 20px;
+  border: 1px solid #0D00FF;
+  padding: 7px 20px;
+}
+.block3 .main3 .for .name5 p {
+  color: #0D00FF;
+  text-align: center;
+  font-family: Unbounded;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.block4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.block4 .main4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.block4 .main4 #text-m {
+  flex-direction: column;
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.block4 .main4 #text-m p {
+  color: #000000;
+  font-family: Unbounded;
+  font-size: 1.75em;
+  margin-bottom: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block4 .main4 .carts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block4 .main4 .carts .cart1 {
+  width: 305px;
+  height: 224px;
+  border-radius: 20px;
+  border: 1px solid #0D00FF;
+}
+.block4 .main4 .carts .cart1 img {
+  padding: 20px 25px;
+}
+.block4 .main4 .carts .cart1 .main-text {
+  color: #0D141C;
+  font-family: Unbounded;
+  padding: 25px;
+  margin-top: -25px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block4 .main4 .carts .cart1 .inner-text {
+  color: #636363;
+  font-family: Montserrat;
+  padding: 0 25px;
+  margin-top: -15px;
+  font-size: 1.438em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.block4 .main4 .carts .cart2 {
+  width: 305px;
+  height: 224px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background-color: #0D00FF;
+}
+.block4 .main4 .carts .cart2 img {
+  position: absolute;
+  margin-top: -100px;
+  margin-left: 200px;
+}
+.block4 .main4 .carts .cart2 .main-text {
+  color: #ffffff;
+  font-family: Unbounded;
+  padding: 25px;
+  margin-bottom: 5px;
+  margin-top: 35px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block4 .main4 .carts .cart2 .inner-text {
+  color: #ffffff;
+  font-family: Montserrat;
+  padding: 0 25px;
+  margin-top: -20px;
+  font-size: 1.438em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.block4 .main4 .carts .cart3 {
+  width: 305px;
+  height: 224px;
+  margin-left: 10px;
+  border-radius: 20px;
+  background: #E6E6E6;
+}
+.block4 .main4 .carts .cart3 .main-text {
+  color: #000000;
+  font-family: Unbounded;
+  padding: 25px;
+  margin-bottom: 5px;
+  margin-top: 35px;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.block4 .main4 .carts .cart3 .inner-text {
+  color: #000000;
+  font-family: Montserrat;
+  padding: 0 25px;
+  margin-top: -20px;
+  font-size: 1.438em;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+}
+.block4 .main4 #img {
+  position: absolute;
+  width: 500px;
+  margin-top: 530px;
+  margin-right: 600px;
+  height: 436px;
+}/*# sourceMappingURL=main.css.map */

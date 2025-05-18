@@ -1,0 +1,8 @@
+@media screen and (max-width: 890px) {
+  header .container .buttons .button-reg {
+    display: none;
+  }
+  header .container .buttons .burger-menu {
+    display: block;
+  }
+}/*# sourceMappingURL=header-footer.css.map */

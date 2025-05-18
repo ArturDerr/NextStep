@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>NextStep</title>
+    <script src="/static/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="scss/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="scss/adaptive/header-footer.css">
+    <link rel="stylesheet" type="text/css" href="scss/main.css">
+</head>
+<body style="background-color:#FAFAFA">
+    <header class="container-fluid">
+        <div class="container d-flex">
+            <img src="img/logo.png" alt="NextStep"/>
+            <nav class="menu">
+                <a href="#work">Как это работает?</a>
+                <a href="#for">Для кого?</a>
+                <a href="#img">Почему стоит попробовать?</a>
+            </nav>
+            <div class="buttons">
+                <div onclick="openRegister()" class="button-reg">
+                    <p>Начать</p>
+                </div>
+                <div onclick="openLogin()" class="button-log">
+                    <p>Войти</p>
+                </div>
+                <div class="burger-menu">
+                    <a>
+                        <img src="../templates/img/burger-menu.svg"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="container">
+            <div class="block1 d-flex">
+                <div class="main">
+                    <p class="main-text">Найди свою <br>будущую <br>профессию с <br>помощью ИИ</p>
+                    <p class="text">Понимай себя. Пройди тест или пообщайся <br>с ИИ — и узнай, какая профессия подходит <br>именно тебе.</p>
+                    <div class="buttons">
+                        <div onclick="openTest()" class="button-test">
+                            <p id="work">Пройти тест</p>
+                        </div>
+                        <div onclick="openChat()" class="button-ai">
+                            <p>Рассказать о себе</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block2 d-flex">
+                <div class="main2">
+                    <div id="text-m">
+                        <p>Как это работает?</p>
+                    </div>
+                    <div class="carts">
+                        <div onclick="openTest()" class="cart1">
+                            <div class="txt">
+                                <p class="number">01</p>
+                                <p id="for" class="m-text">Простой и понятный тест</p>
+                                <p class="text">Всего за <br>несколько шагов ты <br>узнаешь, какие <br>профессии <br>тебе подходят.</p>
+                            </div>
+                        </div>
+                        <div onclick="openChat()" class="cart2">
+                            <div class="txt">
+                                <p class="number">02</p>
+                                <p class="m-text">Умный ИИ-собеседник</p>
+                                <p class="text">Задавай вопросы и<br>получай <br>персональные <br>советы по выбору <br>профессии.</p>
+                            </div>
+                        </div>
+                        <div onclick="openTest()" class="cart3">
+                            <div class="txt">
+                                <p class="number">03</p>
+                                <p class="m-text">Полезные рекомендации</p>
+                                <p class="text">Получи список <br>профессий, <br>описание и что<br> нужно, чтобы<br> туда попасть.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block3 d-flex">
+                <div class="main3">
+                    <div id="text-m">
+                        <p>Для кого?</p>
+                    </div>
+                    <div class="anim">
+                        <div class="for">
+                            <div class="name1">
+                                <p>Кураторы</p>
+                            </div>
+                            <div class="name2">
+                                <p>Школьники 8-11 классов</p>
+                            </div>
+                            <div class="name3">
+                                <p>Студенты</p>
+                            </div>
+                            <div class="name4">
+                                <p>Кто в поиске себя</p>
+                            </div>
+                            <div class="name5">
+                                <p>Родители</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block4 d-flex">
+                <div class="main4">
+                    <div id="text-m">
+                        <p>Почему стоит попробывать?</p>
+                    </div>
+                    <div class="carts">
+                        <div class="cart1">
+                            <img src="../templates/img/Clock.svg"/>
+                            <p class="main-text">Всего 3 минуты</p>
+                            <p class="inner-text">Никаких сложных <br>форм и занудных <br>вопросов.</p>
+                        </div>
+                        <div class="cart2">
+                            <img src="../templates/img/Arrow.svg"/>
+                            <p class="main-text">Бесплатно</p>
+                            <p class="inner-text">Никаких платных <br>подписок, скрытых <br>условий — всё <br>открыто и честно.</p>
+                        </div>
+                        <div class="cart3">
+                            <p class="main-text">Помощник 24/7</p>
+                            <p class="inner-text">Умный чатбот <br>подскажет, поможет <br> глубже понять себя. <br>Работает всегда.</p>
+                        </div>
+                    </div>
+                    <img id="img" src="../templates/img/ukaz.png"/>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="container d-flex">
+            <p><a href="https://t.me/proforientiree">Telegram</a> |  Авторские права © 2025 NextStep. Все права защищены  |  nextstep@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>

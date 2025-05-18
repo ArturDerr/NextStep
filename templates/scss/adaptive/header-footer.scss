@@ -1,0 +1,14 @@
+@media screen and (max-width: 890px) {
+    header {
+        .container {
+            .buttons {
+                .button-reg {
+                    display: none;
+                }
+                .burger-menu {
+                    display: block;
+                }
+            }
+        }
+    }
+}
