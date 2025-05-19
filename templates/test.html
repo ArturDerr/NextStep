@@ -49,44 +49,43 @@
             </div>
             <div class="block2 d-flex">
                 <div class="tests">
-                    <p id="main-text">— Что ты делаешь с удовольствием?</p>
-                    <div class="carts" id="answer-block">
-                        <div id="carts-one">
-                            <div class="cart1">
-                                <p>Решаю логические задачи, головоломки, программирую</p>
-                                <img id="checked" src="{{ url_for('static', filename='img/Radio.svg') }}"/>
-                            </div>
-                            <div class="cart1">
-                                <p>Решаю логические задачи, головоломки, программирую</p>
-                                <img id="checked" src="{{ url_for('static', filename='img/Radio.svg') }}"/>
-                            </div>
-                            <div class="cart1">
-                                <p>Решаю логические задачи, головоломки, программирую</p>
-                                <img id="checked" src="{{ url_for('static', filename='img/Radio.svg') }}"/>
-                            </div>
+                    <div style="display: flex; flex-direction: row;">
+                        <div id="question-number">
                         </div>
-                        <div id="carts-two">
-                            <div class="cart1">
-                                <p>Решаю логические задачи, головоломки, программирую</p>
-                                <img id="checked" src="{{ url_for('static', filename='img/Radio.svg') }}"/>
-                            </div>
-                            <div class="cart1">
-                                <p>Решаю логические задачи, головоломки, программирую</p>
-                                <img id="checked" src="{{ url_for('static', filename='img/Radio.svg') }}"/>
-                            </div>
-                            <div class="cart1">
-                                <p>Решаю логические задачи, головоломки, программирую</p>
-                                <img id="checked" src="{{ url_for('static', filename='img/Radio.svg') }}"/>
-                            </div>
+                        <p id="count">из 12</p>
+                    </div>
+                    <div id="div">
+                        <p id="main-text">— Что ты делаешь с удовольствием?</p>
+                    </div>
+                    <div id="processing" style="display: none;">
+                        <img src="/static/img/spinner.gif" alt="Загрузка..." width="24" height="24" />
+                        <p id="processing-text">Обработка результата...</p>
+                    </div>
+                    <p id="result-text" style="display: none;">Ваш результат</p>
+                    <div id="answer-block">
+                        <div id="inn-div">
+                            <div class="cart1" data-index="0"><p></p><img src="/static/img/Radio.svg" /></div>
+                            <div class="cart1" data-index="1"><p></p><img src="/static/img/Radio.svg" /></div>
+                            <div class="cart1" data-index="2"><p></p><img src="/static/img/Radio.svg" /></div>
+                        </div>
+                        <div id="inn-div">
+                            <div class="cart1" data-index="3"><p></p><img src="/static/img/Radio.svg" /></div>
+                            <div class="cart1" data-index="4"><p></p><img src="/static/img/Radio.svg" /></div>
+                            <div class="cart1" data-index="5"><p></p><img src="/static/img/Radio.svg" /></div>
                         </div>
                     </div>
-                    <button id="next-btn">Далее</button>
-                    <div id="ai-result" style="margin-top: 30px;"></div>
+                    <div id="next-btn">
+                        <div id="cursor">
+                            <p id="p-div">вперед</p>
+                            <img id="img-div" src="{{ url_for('static', filename='img/black-left.svg') }}"/>
+                        </div>
+                    </div>
+                    <div id="ai-result" style="display: none;"></div>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="container-fluid">
+    <footer class="container-fluid" style="margin-top: 360px;">
         <div class="container d-flex">
             <p><a href="https://t.me/proforientiree">Telegram</a> | <a href="https://github.com/ArturDerr/NextStep">GitHub</a> |  Авторские права © 2025 NextStep. Все права защищены  |  nextstep@gmail.com</p>
         </div>

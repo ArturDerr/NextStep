@@ -13,14 +13,19 @@
 
 .block1 {
   display: flex;
-  padding: 0 300px 0 0;
   justify-content: center;
   align-items: center;
-  margin-top: 36px;
+  padding-right: 560px;
+  margin-bottom: -20px;
+  margin-top: 40px;
+}
+.block1 .name {
+  width: 650px;
+  padding-left: 40px;
 }
 .block1 .name p {
   color: #000;
-  text-align: center;
+  text-align: left;
   font-family: Unbounded;
   font-size: 1.875em;
   font-style: normal;
@@ -29,13 +34,40 @@
 }
 
 .block2 {
+  width: -moz-fit-content;
+  width: fit-content;
   display: flex;
   justify-content: center;
+  padding-left: 370px;
+  padding-right: 40px;
   align-items: center;
   margin-top: 40px;
-  padding: 0 360px 0 0;
 }
-.block2 .tests #main-text {
+.block2 .tests #question-number {
+  padding-left: 15px;
+  color: #0D00FF;
+  margin-bottom: 20px;
+  font-family: Unbounded;
+  font-size: 1.938em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.block2 .tests #count {
+  padding: 5px;
+  color: #b1b1b1;
+  font-family: Unbounded;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+}
+.block2 .tests #div {
+  margin-left: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.block2 .tests #div #main-text {
   color: #000;
   font-family: Montserrat;
   font-size: 1.563em;
@@ -43,21 +75,115 @@
   font-weight: 700;
   line-height: 25px;
 }
-.block2 .tests .carts .carts-one {
+.block2 .tests #processing {
   display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
+  margin-left: 25px;
 }
-.block2 .tests .carts .carts-one .cart1 {
-  border-radius: 20px;
-  background: #DBDBDB;
+.block2 .tests #processing #processing-text {
+  color: #000;
+  font-family: Unbounded;
+  font-size: 1.3em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  padding-left: 10px;
 }
-.block2 .tests .carts .carts-one .cart1 p {
+.block2 .tests #result-text {
+  margin-left: 8px;
+  color: #0D00FF;
+  font-family: Unbounded;
+  font-size: 1.5em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.block2 .tests #next-btn {
+  display: flex;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.block2 .tests #next-btn #cursor {
+  display: flex;
+  justify-content: right;
+  flex-direction: row;
+  cursor: pointer;
+}
+.block2 .tests #next-btn #cursor:hover p {
+  transition: 0.2s;
+  color: #0D00FF;
+}
+.block2 .tests #next-btn #cursor:hover img {
+  transition: 0.2s;
+}
+.block2 .tests #next-btn #cursor p {
   color: #000;
   font-family: Montserrat;
-  font-size: 1.313em;
+  font-size: 0.938em;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+}
+.block2 .tests #next-btn #cursor img {
+  margin-top: 1px;
+  margin-left: 4px;
+}
+.block2 .tests #ai-result {
+  margin-top: 25px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 5px;
+  margin-right: 500px;
+  border-radius: 20px;
+  margin-bottom: 400px;
+  border: 1px solid #DDD;
+  padding: 25px 25px 25px 15px;
+  background: #F5F5F5;
+}
+.block2 .tests #ai-result ol, .block2 .tests #ai-result ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.block2 .tests #answer-block {
+  margin-top: 20px;
+}
+.block2 .tests #answer-block #inn-div {
+  display: flex;
+  justify-content: left;
+  flex-direction: row;
+  margin-bottom: 10px;
+}
+.block2 .tests #answer-block .cart1 {
+  cursor: pointer;
+  margin-left: 10px;
+  border-radius: 20px;
+  background: #e2e2e2;
+  width: -moz-fit-content;
+  width: fit-content;
+  transition: 0.4s;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.block2 .tests #answer-block .cart1:hover {
+  background: #0D00FF;
+  transform: scale(1.1);
+}
+.block2 .tests #answer-block .cart1.selected {
+  background: #0D00FF;
+}
+.block2 .tests #answer-block .cart1:hover p, .block2 .tests #answer-block .cart1.selected p {
+  color: #ffffff;
+}
+.block2 .tests #answer-block .cart1 p {
+  color: #000;
+  font-family: Montserrat;
+  font-size: 1.213em;
   font-style: normal;
   font-weight: 400;
   line-height: 25px;
+  padding: 30px;
+}
+.block2 .tests #answer-block .cart1 img {
+  display: none;
+  padding-right: 30px;
 }/*# sourceMappingURL=test.css.map */

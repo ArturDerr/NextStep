@@ -39,6 +39,10 @@ main .container .block2 .chat-messages {
   justify-content: center;
   flex-direction: column;
 }
+main .container .block2 .chat-messages ol, main .container .block2 .chat-messages ul {
+  margin-left: 20px;
+  padding-left: 20px;
+}
 main .container .block2 .input {
   padding: 20px 35px 10px;
 }
@@ -47,6 +51,11 @@ main .container .block2 .input #inner {
   border-radius: 20px;
   background: #FFF;
   padding: 6px 10px;
+  border: 1.9px solid transparent;
+  transition: border-color 0.2s ease;
+}
+main .container .block2 .input #inner:hover, main .container .block2 .input #inner:focus-within {
+  border-color: #0D00FF;
 }
 main .container .block2 .input #inner form #inner-div {
   display: flex;
@@ -160,7 +169,7 @@ main .container .block2 .chat .message-ai .text {
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 20px;
-  padding: 9px 15px;
+  padding: 15px 25px;
   background: #FFF;
 }
 main .container .block2 .chat .message-ai .text p {

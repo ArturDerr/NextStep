@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <p>NextStepAI</p>
             <div class="text" id="ai-response">
                 <div id="loading" style="text-align: center;">
-                    <img src="/static/img/spinner.gif" alt="Загрузка..." width="15" height="15">
+                    <img src="/static/img/spinner.gif" alt="Загрузка..." width="20" height="20">
                 </div>
             </div>
         `;
@@ -47,7 +47,6 @@ document.addEventListener("DOMContentLoaded", function () {
             const data = await res.json();
 
             responseDiv.innerHTML = marked.parse(data.reply);
-            // если не работает парсер выше, то --> responseDiv.innerHTML = `<p>${data.reply}</p>`;
         } catch (err) {
             responseDiv.innerHTML = `<p>На сайте ведутся технические работы, попробуйте позже</p>`;
         } finally {

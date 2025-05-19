@@ -21,7 +21,7 @@ def chat():
     headers = {
         "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",
         "Content-Type": "application/json",
-        "HTTP-Referer": "https://your-site-url.com",  # замените при необходимости
+        "HTTP-Referer": "https://your-site-url.com", 
         "X-Title": "NextStepAI"
     }
 

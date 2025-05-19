@@ -41,6 +41,10 @@ main {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                ol, ul {
+                    margin-left: 20px; 
+                    padding-left: 20px; 
+                }
             }
             .input {
                 padding: 20px 35px 10px;
@@ -49,8 +53,11 @@ main {
                     border-radius: 20px;
                     background: #FFF;
                     padding: 6px 10px;
-                    &:hover:active {
-
+                    border: 1.9px solid transparent;
+                    transition: border-color 0.2s ease;
+                    &:hover,
+                    &:focus-within {
+                        border-color: #0D00FF;
                     }
                     form {
                         #inner-div {
@@ -160,7 +167,7 @@ main {
                     .text {
                         width: fit-content;
                         border-radius: 20px;
-                        padding: 9px 15px;
+                        padding: 15px 25px;
                         background: #FFF;
                         p {
                             color: #000000;
