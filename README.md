@@ -2,4 +2,14 @@
 
 **NextStep** - a platform for career guidance for both schoolchildren and adults using artificial intelligence
 
+## Запуск
+
+bash
+# Установка зависимостей
+pip install -r requirements.txt
+
+# Запуск сервера
+python app.py
+
+
 
