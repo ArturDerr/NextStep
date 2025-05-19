@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <title>NextStep</title>
-    <script src="/static/script.js" defer></script>
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    <link rel="icon" href="../static/img/log.png" sizes="50x50" type="image/png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="scss/header-footer.css">
-    <link rel="stylesheet" type="text/css" href="scss/adaptive/header-footer.css">
-    <link rel="stylesheet" type="text/css" href="scss/main.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/main.css') }}">
 </head>
 <body style="background-color:#FAFAFA">
     <header class="container-fluid">
         <div class="container d-flex">
-            <img src="img/logo.png" alt="NextStep"/>
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="NextStep"/>
             <nav class="menu">
                 <a href="#work">Как это работает?</a>
                 <a href="#for">Для кого?</a>
@@ -32,7 +33,7 @@
                 </div>
                 <div class="burger-menu">
                     <a>
-                        <img src="../templates/img/burger-menu.svg"/>
+                        <img src="{{ url_for('static', filename='img/burger-menu.svg') }}"/>
                     </a>
                 </div>
             </div>
@@ -117,12 +118,12 @@
                     </div>
                     <div class="carts">
                         <div class="cart1">
-                            <img src="../templates/img/Clock.svg"/>
+                            <img src="{{ url_for('static', filename='img/Clock.svg') }}"/>
                             <p class="main-text">Всего 3 минуты</p>
                             <p class="inner-text">Никаких сложных <br>форм и занудных <br>вопросов.</p>
                         </div>
                         <div class="cart2">
-                            <img src="../templates/img/Arrow.svg"/>
+                            <img src="{{ url_for('static', filename='img/Arrow.svg') }}"/>
                             <p class="main-text">Бесплатно</p>
                             <p class="inner-text">Никаких платных <br>подписок, скрытых <br>условий — всё <br>открыто и честно.</p>
                         </div>
@@ -131,14 +132,14 @@
                             <p class="inner-text">Умный чатбот <br>подскажет, поможет <br> глубже понять себя. <br>Работает всегда.</p>
                         </div>
                     </div>
-                    <img id="img" src="../templates/img/ukaz.png"/>
+                    <img id="img" src="{{ url_for('static', filename='img/ukaz.png') }}"/>
                 </div>
             </div>
         </div>
     </main>
     <footer class="container-fluid">
         <div class="container d-flex">
-            <p><a href="https://t.me/proforientiree">Telegram</a> |  Авторские права © 2025 NextStep. Все права защищены  |  nextstep@gmail.com</p>
+            <p><a href="https://t.me/proforientiree">Telegram</a> | <a href="https://github.com/ArturDerr/NextStep">GitHub</a> |  Авторские права © 2025 NextStep. Все права защищены  |  nextstep@gmail.com</p>
         </div>
     </footer>
 </body>

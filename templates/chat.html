@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>NextStep</title>
+    <script src="{{ url_for('static', filename='chat.js') }}" defer></script>
+    <link rel="icon" href="../static/img/log.png" sizes="50x50" type="image/png">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/chat.css') }}">
+</head>
+<body style="background-color:#FAFAFA">
+    <header class="container-fluid">
+        <div class="container d-flex">
+            <img src="{{ url_for('static', filename='img/logo.png') }}" onclick="openMain()" alt="NextStep"/>
+            <nav class="menu">
+                <a href="#work">Как это работает?</a>
+                <a href="#for">Для кого?</a>
+                <a href="#img">Почему стоит попробовать?</a>
+            </nav>
+            <div class="buttons">
+                <div onclick="openRegister()" class="button-reg">
+                    <p>Начать</p>
+                </div>
+                <div onclick="openLogin()" class="button-log">
+                    <p>Войти</p>
+                </div>
+                <div class="burger-menu">
+                    <a>
+                        <img src="{{ url_for('static', filename='img/burger-menu.svg') }}"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="container">
+        <div class="container">
+            <div class="block1 d-flex">
+                <div class="star">
+                    <img src="{{ url_for('static', filename='img/star.svg') }}">
+                    <p>Расскажи о себе в свободной форме, чтобы наш искусственный <br>интеллект помог найти идеальную профессию.</p>
+                </div>
+            </div>
+            <div class="block2 d-flex">
+                <div class="chat">
+                    <div class="chat-messages" id="chat-messages">
+                    </div>
+                    <div class="input">
+                        <div id="inner">
+                            <form id="chat-form" name="text" action="" method="get">
+                                <div id="inner-div">
+                                    <input type="text" id="user-input" name="text" placeholder="Люблю творческие задачи, где могу проявить фантазию. Занимаюсь дизайном..."/>
+                                    <button type="submit" id="send-btn">
+                                        <img src="{{ url_for('static', filename='img/submit.svg') }}"/>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-t">
+                        <p>Чтобы отправлять больше сообщений, <a href="#" style="color: #9c9c9c;">зарегистрируйтесь</a> или <a href="#" style="color: #9c9c9c;">войдите в аккаунт</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="container-fluid">
+        <div class="container d-flex">
+            <p><a href="https://t.me/proforientiree">Telegram</a> | <a href="https://github.com/ArturDerr/NextStep">GitHub</a> |  Авторские права © 2025 NextStep. Все права защищены  |  nextstep@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
