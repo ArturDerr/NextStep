@@ -33,6 +33,7 @@ main .container .block2 {
   flex-direction: column;
   margin-top: 30px;
   justify-content: center;
+  margin-bottom: 300px;
 }
 main .container .block2 .chat-messages {
   display: flex;

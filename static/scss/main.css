@@ -476,6 +476,7 @@ html {
   width: 305px;
   height: 224px;
   margin-left: 10px;
+  flex-direction: column;
   border-radius: 20px;
   background: #E6E6E6;
 }
@@ -490,7 +491,7 @@ html {
   font-weight: 700;
   line-height: 28px;
 }
-.block4 .main4 .carts .cart3 #inn {
+.block4 .main4 .carts .cart3 .inner-text {
   color: #000000;
   font-family: Montserrat;
   padding: 0 25px;

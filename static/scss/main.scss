@@ -482,6 +482,7 @@ html {
                 width: 305px;
                 height: 224px;
                 margin-left: 10px;
+                flex-direction: column;
                 border-radius: 20px;
                 background: #E6E6E6;
                 .main-text {
@@ -495,7 +496,7 @@ html {
                     font-weight: 700;
                     line-height: 28px; 
                 }
-                #inn {
+                .inner-text {
                     color: #000000;
                     font-family: Montserrat;
                     padding: 0 25px;
