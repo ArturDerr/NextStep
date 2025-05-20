@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextStep</title>
     <script src="{{ url_for('static', filename='script.js') }}" defer></script>
     <link rel="icon" href="../static/img/log.png" sizes="50x50" type="image/png">
@@ -12,8 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='scss/header-footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='scss/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/main-adaptive.css') }}">
+
 </head>
 <body style="background-color:#FAFAFA">
     <header class="container-fluid">
@@ -24,19 +27,6 @@
                 <a href="#for">Для кого?</a>
                 <a href="#img">Почему стоит попробовать?</a>
             </nav>
-            <div class="buttons">
-                <div onclick="openRegister()" class="button-reg">
-                    <p>Начать</p>
-                </div>
-                <div onclick="openLogin()" class="button-log">
-                    <p>Войти</p>
-                </div>
-                <div class="burger-menu">
-                    <a>
-                        <img src="{{ url_for('static', filename='img/burger-menu.svg') }}"/>
-                    </a>
-                </div>
-            </div>
         </div>
     </header>
     <main class="container">
@@ -129,7 +119,7 @@
                         </div>
                         <div class="cart3">
                             <p class="main-text">Помощник 24/7</p>
-                            <p class="inner-text">Умный чатбот <br>подскажет, поможет <br> глубже понять себя. <br>Работает всегда.</p>
+                            <p class="inner-text" id="inn">Умный чатбот <br>подскажет, поможет <br> глубже понять себя. <br>Работает всегда.</p>
                         </div>
                     </div>
                     <img id="img" src="{{ url_for('static', filename='img/ukaz.png') }}"/>

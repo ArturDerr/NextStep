@@ -144,7 +144,7 @@ html {
   cursor: pointer;
   width: 305px;
   height: 454.786px;
-  background: url("../img/cart1.png");
+  background: url("../img/cart1.png") no-repeat;
   transition: 0.4s;
 }
 .block2 .main2 .carts .cart1:hover {
@@ -186,7 +186,7 @@ html {
   height: 454.786px;
   margin-left: 10px;
   transition: 0.4s;
-  background: url("../img/cart2.png");
+  background: url("../img/cart2.png") no-repeat;
 }
 .block2 .main2 .carts .cart2:hover {
   transform: scale(1.1);
@@ -472,6 +472,7 @@ html {
   line-height: 25px;
 }
 .block4 .main4 .carts .cart3 {
+  display: flex;
   width: 305px;
   height: 224px;
   margin-left: 10px;
@@ -489,7 +490,7 @@ html {
   font-weight: 700;
   line-height: 28px;
 }
-.block4 .main4 .carts .cart3 .inner-text {
+.block4 .main4 .carts .cart3 #inn {
   color: #000000;
   font-family: Montserrat;
   padding: 0 25px;

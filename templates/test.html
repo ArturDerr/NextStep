@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextStep</title>
     <script src="{{ url_for('static', filename='test.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -13,8 +14,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='scss/header-footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='scss/test.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/test-adaptive.css') }}">
 </head>
 <body style="background-color:#FAFAFA">
     <header class="container-fluid">
@@ -25,19 +27,6 @@
                 <a href="#for">Для кого?</a>
                 <a href="#img">Почему стоит попробовать?</a>
             </nav>
-            <div class="buttons">
-                <div onclick="openRegister()" class="button-reg">
-                    <p>Начать</p>
-                </div>
-                <div onclick="openLogin()" class="button-log">
-                    <p>Войти</p>
-                </div>
-                <div class="burger-menu">
-                    <a>
-                        <img src="{{ url_for('static', filename='img/burger-menu.svg') }}"/>
-                    </a>
-                </div>
-            </div>
         </div>
     </header>
     <main class="container">
@@ -61,7 +50,7 @@
                         <img src="/static/img/spinner.gif" alt="Загрузка..." width="24" height="24" />
                         <p id="processing-text">Обработка результата...</p>
                     </div>
-                    <p id="result-text" style="display: none;">Ваш результат</p>
+                    <p id="result-text" style="display: none;">Ваш результат:</p>
                     <div id="answer-block">
                         <div id="inn-div">
                             <div class="cart1" data-index="0"><p></p><img src="/static/img/Radio.svg" /></div>

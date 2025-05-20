@@ -142,7 +142,7 @@ html {
                 cursor: pointer;
                 width: 305px;
                 height: 454.786px;
-                background: url("../img/cart1.png");
+                background: url("../img/cart1.png") no-repeat;
                 transition: 0.4s;
                 &:hover {
                     transform: scale(1.1);
@@ -186,7 +186,7 @@ html {
                 height: 454.786px;
                 margin-left: 10px;
                 transition: 0.4s;
-                background: url("../img/cart2.png");
+                background: url("../img/cart2.png") no-repeat;
                 &:hover {
                     transform: scale(1.1);
                     background: url("../img/cart2-selected.png");
@@ -478,6 +478,7 @@ html {
                 }
             }
             .cart3 {
+                display: flex;
                 width: 305px;
                 height: 224px;
                 margin-left: 10px;
@@ -494,7 +495,7 @@ html {
                     font-weight: 700;
                     line-height: 28px; 
                 }
-                .inner-text {
+                #inn {
                     color: #000000;
                     font-family: Montserrat;
                     padding: 0 25px;

@@ -164,6 +164,8 @@ const questions = [
 let current = 0;
 const scores = { tech: 0, human: 0, creative: 0 };
 
+const selectedAnswers = [];
+
 const mainText = document.getElementById("main-text");
 const answerBlock = document.getElementById("answer-block");
 const nextBtn = document.getElementById("next-btn");
@@ -193,6 +195,11 @@ function renderQuestion() {
     } else {
       el.style.display = "none";
     }
+    if (current === questions.length - 1) {
+      p_div.textContent = "завершить";
+    } else {
+      p_div.textContent = "вперед";
+    }
   });
 
   selected = null;
@@ -220,6 +227,11 @@ nextBtn.addEventListener("click", () => {
   if (!selected) return;
 
   scores[selected]++;
+
+  const q = questions[current];
+  const answerText = q.answers.find(a => a.category === selected)?.text;
+  selectedAnswers.push({ question: q.question, answer: answerText });
+
   current++;
 
   if (current < questions.length) {
@@ -243,7 +255,7 @@ async function showResult() {
     const res = await fetch("/recommend", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ scores })
+      body: JSON.stringify({ scores, answers: selectedAnswers })
     });
 
     const data = await res.json();

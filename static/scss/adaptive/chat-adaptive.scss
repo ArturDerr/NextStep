@@ -1,0 +1,200 @@
+@media screen and (max-width: 960px) {
+    main {
+        .container {
+            .block2 {
+                margin-bottom: -150px;
+                .chat {
+                    width: 700px;
+                    .input {
+                        padding: 0px 0px 10px;
+                        #inner {
+                            #chat-form {
+                                width: 680px;
+                                #inner-div {
+                                    input {
+                                        width: 640px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+    main {
+        .container {
+            .block1 {
+                display: flex;
+                margin-top: 110px;
+                justify-content: center;
+                align-items: center;
+                .star {
+                    text-align: center;
+                    p {
+                        text-align: center;
+                        font-family: Unbounded;
+                        font-size: 0.9em;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 25px;
+                    }
+                }
+            }
+            .block2 {
+                .text-t {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding-bottom: 15px;
+                    p {
+                        text-align: center;
+                        width: 400px;
+                        color: #9c9c9c;
+                        font-family: Montserrat;
+                        font-size: 0.800em;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }       
+                .chat {
+                    width: 500px;
+                    .input {
+                        padding: 0px 0px 10px;
+                        #inner {
+                            #chat-form {
+                                width: 480px;
+                                #inner-div {
+                                    input {
+                                        width: 420px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 540px) {
+    main {
+        .container {
+            .block1 {
+                display: flex;
+                margin-top: 110px;
+                justify-content: center;
+                align-items: center;
+                .star {
+                    text-align: center;
+                    p {
+                        text-align: center;
+                        font-family: Unbounded;
+                        font-size: 0.8em;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .block2 {
+                .text-t {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding-bottom: 15px;
+                    p {
+                        text-align: center;
+                        width: 300px;
+                        color: #9c9c9c;
+                        font-family: Montserrat;
+                        font-size: 0.700em;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }       
+                .chat {
+                    width: 400px;
+                    .input {
+                        padding: 0px 0px 10px;
+                        #inner {
+                            #chat-form {
+                                width: 380px;
+                                #inner-div {
+                                    input {
+                                        width: 320px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 460px) {
+    main {
+        .container {
+            .block1 {
+                display: flex;
+                margin-top: 110px;
+                justify-content: center;
+                align-items: center;
+                .star {
+                    text-align: center;
+                    p {
+                        text-align: center;
+                        font-family: Unbounded;
+                        font-size: 0.8em;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 20px;
+                    }
+                }
+            }
+            .block2 {
+                .text-t {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding-bottom: 15px;
+                    p {
+                        text-align: center;
+                        width: 300px;
+                        color: #9c9c9c;
+                        font-family: Montserrat;
+                        font-size: 0.700em;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }       
+                .chat {
+                    width: 300px;
+                    .input {
+                        padding: 0px 0px 10px;
+                        #inner {
+                            #chat-form {
+                                width: 285px;
+                                #inner-div {
+                                    input {
+                                        width: 235px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

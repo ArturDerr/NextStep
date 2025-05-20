@@ -15,8 +15,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-right: 560px;
-  margin-bottom: -20px;
+  margin-left: 270px;
+  margin-bottom: -30px;
+  max-width: 800px;
   margin-top: 40px;
 }
 .block1 .name {
@@ -41,7 +42,7 @@
   padding-left: 370px;
   padding-right: 40px;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .block2 .tests #question-number {
   padding-left: 15px;
@@ -90,8 +91,8 @@
   padding-left: 10px;
 }
 .block2 .tests #result-text {
-  margin-left: 8px;
-  color: #0D00FF;
+  margin-left: 15px;
+  color: #000000;
   font-family: Unbounded;
   font-size: 1.5em;
   font-style: normal;
@@ -132,12 +133,12 @@
   margin-top: 25px;
   width: -moz-fit-content;
   width: fit-content;
-  margin-left: 5px;
+  margin-left: 15px;
   margin-right: 500px;
   border-radius: 20px;
   margin-bottom: 400px;
   border: 1px solid #DDD;
-  padding: 25px 25px 25px 15px;
+  padding: 25px;
   background: #F5F5F5;
 }
 .block2 .tests #ai-result ol, .block2 .tests #ai-result ul {

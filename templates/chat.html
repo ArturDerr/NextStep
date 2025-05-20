@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NextStep</title>
     <script src="{{ url_for('static', filename='chat.js') }}" defer></script>
     <link rel="icon" href="../static/img/log.png" sizes="50x50" type="image/png">
@@ -13,8 +14,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ url_for('static', filename='scss/header-footer.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='scss/chat.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/header-footer.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='scss/adaptive/chat-adaptive.css') }}">
+
 </head>
 <body style="background-color:#FAFAFA">
     <header class="container-fluid">
@@ -25,19 +28,6 @@
                 <a href="#for">Для кого?</a>
                 <a href="#img">Почему стоит попробовать?</a>
             </nav>
-            <div class="buttons">
-                <div onclick="openRegister()" class="button-reg">
-                    <p>Начать</p>
-                </div>
-                <div onclick="openLogin()" class="button-log">
-                    <p>Войти</p>
-                </div>
-                <div class="burger-menu">
-                    <a>
-                        <img src="{{ url_for('static', filename='img/burger-menu.svg') }}"/>
-                    </a>
-                </div>
-            </div>
         </div>
     </header>
     <main class="container">
@@ -56,7 +46,7 @@
                         <div id="inner">
                             <form id="chat-form" name="text" action="" method="get">
                                 <div id="inner-div">
-                                    <input type="text" id="user-input" name="text" placeholder="Люблю творческие задачи, где могу проявить фантазию. Занимаюсь дизайном..."/>
+                                    <input type="text" id="user-input" name="text" placeholder="Люблю творческие задачи, где могу проявить фантазию..."/>
                                     <button type="submit" id="send-btn">
                                         <img src="{{ url_for('static', filename='img/submit.svg') }}"/>
                                     </button>
@@ -65,7 +55,7 @@
                         </div>
                     </div>
                     <div class="text-t">
-                        <p>Чтобы отправлять больше сообщений, <a href="#" style="color: #9c9c9c;">зарегистрируйтесь</a> или <a href="#" style="color: #9c9c9c;">войдите в аккаунт</a></p>
+                        <p>Нейросеть может совершать ошибки, проверяйте важную информацию</p>
                     </div>
                 </div>
             </div>

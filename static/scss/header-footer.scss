@@ -24,6 +24,8 @@ header {
     top: 0;
     z-index: 1000;
     padding: 12px 40px;
+    justify-content: center;
+    align-items: center;
     .container {
         img {
             cursor: pointer;
@@ -31,7 +33,10 @@ header {
             height: 44.328px;
         }
         .menu {
-            padding-left: 50px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
             justify-content: center;
             align-items: center;
             align-self: center;
@@ -114,8 +119,32 @@ header {
                 display: none;
                 img {
                     margin-top: 5px;
-                    width: 25px;
-                    height: 25px;
+                    width: 35px;
+                    height: 28px;
+                }
+                &:hover {                    
+                    cursor: pointer;
+                    margin-top: 1px;
+                    width: 35px;
+                    height: 28px;
+                    content: url(../img/burger-menu-selected.svg);
+                }
+                .menu {
+                    position: relative;
+                    display: grid;
+                    margin-block-start: 0.5lh;
+                    background-color: #888888;
+
+                    overflow: hidden;
+                    line-height: 0;
+                    color: transparent;
+                    transition: line-height 0.5s, color 0.5s;
+                }
+                &.active {
+                    .menu {
+                        max-height: 300px; 
+                        opacity: 1;
+                    }
                 }
             }
         }

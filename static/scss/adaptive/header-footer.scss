@@ -1,14 +1,30 @@
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 980px) {
     header {
         .container {
+            .menu {
+                display: none;
+            }
             .buttons {
                 .button-reg {
                     display: none;
                 }
+                .button-log {
+                    display: none;
+                }
+                
                 .burger-menu {
-                    display: block;
+                    display: flex;
                 }
             }
+        }
+    }
+}
+
+@media screen and (max-width: 860px) {
+    footer {
+        .container {
+            text-align: center;
+            width: 460px;
         }
     }
 }

@@ -5,4 +5,3 @@ function openChat() {
 function openTest() {
     window.location.href = "/test";
 }
-

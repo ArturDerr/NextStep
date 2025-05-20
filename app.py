@@ -52,16 +52,22 @@ def test():
 
 @app.route("/recommend", methods=["POST"])
 def recommend():
-    scores = request.json.get("scores", {})
+    data = request.json
+    scores = data.get("scores", {})
+    answers = data.get("answers", [])
 
-    summary = "\n".join([f"{k}: {v}" for k, v in scores.items()])
-    user_prompt = f"""На основе следующих интересов определи подходящие профессии. 
-Вот предпочтения пользователя по категориям:
+    formatted_answers = "\n".join(
+        f"{i+1}. {a['question']} — {a['answer']}" for i, a in enumerate(answers)
+    )
 
-{summary}
+    user_prompt = f"""На основе интересов и предпочтений пользователя определи подходящие профессии.
 
-Дай ответ в виде списка из 3-5 подходящих профессий с краткими пояснениями.
-"""
+    Ответь на основании следующих ответов пользователя:
+
+    {formatted_answers}
+
+    Дай список из 3–5 наиболее подходящих профессий с краткими пояснениями и структурированно по пунктам.
+    """
 
     headers = {
         "Authorization": f"Bearer {os.getenv('OPENROUTER_API_KEY')}",

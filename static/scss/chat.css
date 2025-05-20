@@ -44,7 +44,7 @@ main .container .block2 .chat-messages ol, main .container .block2 .chat-message
   padding-left: 20px;
 }
 main .container .block2 .input {
-  padding: 20px 35px 10px;
+  padding: 0px 0px 10px;
 }
 main .container .block2 .input #inner {
   display: flex;
@@ -62,7 +62,7 @@ main .container .block2 .input #inner form #inner-div {
   padding: 6px 10px;
 }
 main .container .block2 .input #inner form #inner-div input[type=text] {
-  width: 771px;
+  width: 840px;
   font-family: Montserrat;
   color: #000000;
   font-size: 1em;

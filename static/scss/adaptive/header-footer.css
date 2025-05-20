@@ -1,8 +1,20 @@
-@media screen and (max-width: 890px) {
+@media screen and (max-width: 980px) {
+  header .container .menu {
+    display: none;
+  }
   header .container .buttons .button-reg {
     display: none;
   }
+  header .container .buttons .button-log {
+    display: none;
+  }
   header .container .buttons .burger-menu {
-    display: block;
+    display: flex;
+  }
+}
+@media screen and (max-width: 860px) {
+  footer .container {
+    text-align: center;
+    width: 460px;
   }
 }/*# sourceMappingURL=header-footer.css.map */
