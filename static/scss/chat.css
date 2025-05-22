@@ -11,6 +11,13 @@
   align-items: center;
 }
 
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  margin-top: 0;
+}
+
 main .container .block1 {
   display: flex;
   margin-top: 110px;
@@ -126,7 +133,7 @@ main .container .block2 .chat .message-you {
   text-align: right;
   display: inline-block;
   flex-direction: column;
-  padding: 20px 30px 25px;
+  padding: 15px 30px 10px;
   justify-content: center;
 }
 main .container .block2 .chat .message-you P {
@@ -154,7 +161,7 @@ main .container .block2 .chat .message-you .text p {
 }
 main .container .block2 .chat .message-ai {
   display: inline-block;
-  padding: 0px 30px 10px;
+  padding: 0px 30px 20px 30px;
   justify-content: center;
   align-items: flex-end;
 }

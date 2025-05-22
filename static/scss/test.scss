@@ -11,6 +11,14 @@
     align-items: center;
 }
 
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    margin-top: 0;
+}
+
 .block1 {
     display: flex;
     justify-content: center;
@@ -134,7 +142,7 @@
             margin-left: 15px;
             margin-right: 500px;
             border-radius: 20px;
-            margin-bottom: 400px;
+            margin-bottom: 20px;
             border: 1px solid #DDD;
             padding: 25px;
             background: #F5F5F5;
