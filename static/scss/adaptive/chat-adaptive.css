@@ -121,6 +121,7 @@
   }
   main .container .block1 .star p {
     text-align: center;
+    width: 350px;
     font-family: Unbounded;
     font-size: 0.8em;
     font-style: normal;

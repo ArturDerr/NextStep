@@ -20,3 +20,207 @@
         }
     }
 }
+
+@media screen and (max-width: 980px) {
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 75px;
+        max-width: 600px;
+        margin-top: 40px;
+        .name {
+            width: 650px;
+            p {
+                color: #000;
+                text-align: left;
+                font-family: Unbounded;
+                font-size: 1.675em;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+    }
+    .block2 {
+        margin-bottom: 150px;
+        .tests {
+            #answer-block {
+                #inn-div {
+                    margin-bottom: 0px;
+                    flex-direction: column;
+                    .cart1 {
+                        margin-bottom: 10px;
+                        p {
+                           font-size: 1em;
+                           line-height: 20px; 
+                           padding: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        max-width: 600px;
+        margin-top: 40px;
+        .name {
+            width: 650px;
+            p {
+                color: #000;
+                text-align: left;
+                font-family: Unbounded;
+                font-size: 1.675em;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+    }
+    .block2 {
+        margin-bottom: 150px;
+        margin-left: -65px;
+        .tests {
+            #answer-block {
+                #inn-div {
+                    margin-bottom: 0px;
+                    flex-direction: column;
+                    .cart1 {
+                        margin-bottom: 10px;
+                        p {
+                           font-size: 1em;
+                           line-height: 20px; 
+                           padding: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -90px;
+        max-width: 500px;
+        margin-bottom: -35px;
+        margin-top: 40px;
+        .name {
+            width: 300px;
+            p {
+                color: #000;
+                text-align: left;
+                font-family: Unbounded;
+                font-size: 1.375em;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+            }
+        }
+    }
+    .block2 {
+        margin-bottom: 150px;
+        margin-left: -65px;
+        .tests {
+            #answer-block {
+                #inn-div {
+                    margin-bottom: 0px;
+                    flex-direction: column;
+                    .cart1 {
+                        margin-bottom: 10px;
+                        p {
+                           font-size: 1em;
+                           line-height: 20px; 
+                           padding: 25px;
+                        }
+                    }
+                }
+            }
+            #question-number {
+                padding-left: 15px;
+                color: #0D00FF;
+                margin-bottom: 10px;
+                font-family: Unbounded;
+                font-size: 1.738em;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 25px;
+            }
+            #count {
+                padding: 5px;
+                color: #b1b1b1;
+                font-family: Unbounded;
+                font-size: 0.938em;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 25px;
+            }
+            #div {
+                margin-left: 18px;
+                display: flex;
+                flex-direction: row;
+                #main-text {
+                    color: #000;
+                    font-family: Montserrat;
+                    font-size: 1.463em;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .block2 {
+        margin-bottom: 150px;
+        margin-left: -85px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+        max-width: 500px;
+        margin-bottom: -35px;
+        margin-top: 40px;
+    }
+
+    .block2 {
+        margin-bottom: 150px;
+        margin-left: -70px;
+    }
+}
+
+
+@media screen and (max-width: 330px) {
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -50px;
+        max-width: 500px;
+        margin-bottom: -35px;
+        margin-top: 40px;
+    }
+
+    .block2 {
+        margin-bottom: 150px;
+        margin-left: -85px;
+    }
+}

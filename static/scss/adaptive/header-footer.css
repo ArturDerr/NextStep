@@ -17,4 +17,13 @@
     text-align: center;
     width: 460px;
   }
+}
+@media screen and (max-width: 430px) {
+  footer .container {
+    text-align: center;
+    width: 350px;
+  }
+  footer .container p {
+    font-size: 0.9em;
+  }
 }/*# sourceMappingURL=header-footer.css.map */

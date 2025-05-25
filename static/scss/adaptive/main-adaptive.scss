@@ -1520,6 +1520,7 @@
     }
     .block2 {
         .main2 {
+            margin-right: 0;
             #text-m {
                 flex-direction: column;
                 display: flex;
@@ -1543,8 +1544,13 @@
                 .cart1{
                     border-radius: 20px;
                     margin-bottom: 20px;
-                    width: 290px;
+                    background: url("../adaptive/img-mobile/cart1-mobile.png") no-repeat !important;
+                    width: 400px;
                     height: 454.786px;
+                    &:hover {
+                        transform: scale(1.1);
+                        background: url("../adaptive/img-mobile/cart1-mobile-selected.png") !important;
+                    }
                     .txt {
                         .number {
                             padding: 40px 30px;
@@ -1557,30 +1563,41 @@
                         }
                         .m-text {
                             color: #FFF;
-                            font-feature-settings: 'dlig' on;
+                            width: 300px;
                             font-family: Unbounded;
                             padding: 10px 30px;
-                            margin-top: 115px;
+                            margin-top: 185px;
                             font-size: 1.4em;
                             font-style: normal;
                             font-weight: 700;
                             line-height: 28px;
                         }
                         .text {
+                            width: 300px;
                             color: #FFF;
                             font-family: Montserrat;
-                            font-size: 1.338em;
+                            font-size: 1em;
                             font-style: normal;
                             padding: 0px 30px;
                             font-weight: 300;
-                            line-height: 25px
+                            line-height: 20px
+                        }
+                        .text br {
+                            display: none;
                         }
                     }
                 }
                 .cart2{
+                    margin-left: 0px;
                     border-radius: 20px;
-                    width: 290px;
+                    background: url("../adaptive/img-mobile/cart2-mobile.png") no-repeat !important;
+                    width: 400px;
+                    margin-bottom: 20px;
                     height: 454.786px;
+                    &:hover {
+                        transform: scale(1.1);
+                        background: url("../adaptive/img-mobile/cart2-mobile-selected.png") !important;
+                    }
                     .txt {
                         .number {
                             padding: 40px 30px;
@@ -1596,7 +1613,7 @@
                             font-feature-settings: 'dlig' on;
                             font-family: Unbounded;
                             padding: 10px 30px;
-                            margin-top: 110px;
+                            margin-top: 210px;
                             font-size: 1.4em;
                             font-style: normal;
                             font-weight: 700;
@@ -1605,18 +1622,27 @@
                         .text {
                             color: #FFF;
                             font-family: Montserrat;
-                            font-size: 1.338em;
+                            font-size: 1em;
                             font-style: normal;
                             padding: 0px 30px;
                             font-weight: 300;
-                            line-height: 25px
+                            line-height: 20px
+                        }
+                        .text br {
+                            display: none;
                         }
                     }
                 }
                 .cart3 {
-                    display: none;
+                    margin-left: 0px;
+                    display: flex;
                     border-radius: 20px;
-                    width: 271px;
+                    background: url("../adaptive/img-mobile/cart3-mobile.png") no-repeat !important;
+                    width: 400px;
+                    &:hover {
+                        transform: scale(1.1);
+                        background: url("../adaptive/img-mobile/cart3-mobile-selected.png") !important;
+                    }
                     .txt {
                         .number {
                             padding: 40px 30px;
@@ -1631,7 +1657,7 @@
                             color: #FFF;
                             font-family: Unbounded;
                             padding: 10px 30px;
-                            margin-top: 110px;
+                            margin-top: 180px;
                             font-size: 1.4em;
                             font-style: normal;
                             font-weight: 700;
@@ -1640,11 +1666,15 @@
                         .text {
                             color: #FFF;
                             font-family: Montserrat;
-                            font-size: 1.338em;
+                            font-size: 1em;
+                            width: 350px;
                             font-style: normal;
                             padding: 0px 30px;
                             font-weight: 300;
-                            line-height: 25px
+                            line-height: 20px
+                        }
+                        .text br {
+                            display: none;
                         }
                     }
                 }
@@ -1656,6 +1686,7 @@
         display: none;
     }
     .block4 {
+        margin-left: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1664,12 +1695,12 @@
         flex-direction: column;
         margin-top: 50px;
         .main4 {
-            margin-right: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             #text-m {
+                margin-left: 10px;
                 flex-direction: column;
                 width: 90px;
                 display: flex;
@@ -1686,13 +1717,14 @@
                 }
             }
             .carts {
+                margin-right: 0px;
                 display: flex; 
                 justify-content: center; 
                 align-items: center; 
                 flex-direction: column;
                 .cart1 {
-                    width: 240px;
-                    height: 254px;
+                    width: fit-content;
+                    height: 180px;
                     margin-bottom: 20px;
                     border-radius: 20px;
                     border: 1px solid #0D00FF;
@@ -1703,7 +1735,7 @@
                         color: #0D141C;
                         font-family: Unbounded;
                         padding: 25px;
-                        margin-top: -25px;
+                        margin-top: -30px;
                         font-size: 1.4em;
                         font-style: normal;
                         font-weight: 700;
@@ -1715,17 +1747,21 @@
                         font-family: Montserrat;
                         padding: 0 25px;
                         margin-top: -15px;
-                        font-size: 1.338em;
+                        font-size: 1em;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 25px;
+                        line-height: 20px;
+                        br {
+                            display: none;
+                        }
                     }
                 }
                 .cart2 {
-                    width: 240px;
-                    height: 254px;
-                    margin-left: 10px;
+                    width: fit-content;
+                    margin-right: 10px;
+                    height: 180px;
                     border-radius: 20px;
+                    margin-bottom: 20px;
                     background-color: #0D00FF;
                     img {
                         display: none;
@@ -1737,50 +1773,58 @@
                         color: #ffffff;
                         font-family: Unbounded;
                         padding: 0 25px 25px 25px;
-                        margin-bottom: 5px;
-                        margin-top: 20px;
+                        margin-bottom: 0px;
+                        margin-top: 75px;
                         font-size: 1.4em;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 28px; 
                     }
                     .inner-text {
+                        width: 390px;
                         color: #ffffff;
                         font-family: Montserrat;
                         padding: 0 25px;
-                        margin-top: -20px;
-                        font-size: 1.338em;
+                        margin-top: -15px;
+                        font-size: 1em;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 25px;
+                        line-height: 20px;
+                        br {
+                            display: none;
+                        }
                     }
                 }
                 .cart3 {
-                    display: none;
-                    width: 271px;
-                    height: 254px;
-                    margin-left: 10px;
+                    display: flex;
+                    width: fit-content;
+                    margin-right: 10px;
+                    height: 180px;
                     border-radius: 20px;
                     background: #E6E6E6;
                     .main-text {
                         color: #000000;
                         font-family: Unbounded;
                         padding: 25px;
-                        margin-bottom: 5px;
-                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        margin-top: 55px;
                         font-size: 1.4em;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 28px; 
                     }
                     .inner-text {
+                        width: 390px;
                         color: #000000;
                         font-family: Montserrat;
                         padding: 0 25px;
-                        font-size: 1.338em;
+                        font-size: 1em;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 25px;
+                        line-height: 20px;
+                    }
+                    br {
+                        display: none;
                     }
                 }
             }
@@ -1801,7 +1845,7 @@
     .block1 {
         .main {
             width: 330px;
-            height: 360px;
+            height: 340px;
             border-radius: 20px;
             .main-text {
                 color: #FFF;
@@ -1852,7 +1896,7 @@
                         height: 100%;
                         text-align: center;
                         font-family: Unbounded;
-                        font-size: 0.60em;
+                        font-size: 0.63em;
                         font-style: normal;
                         font-weight: 700;
                     }
@@ -1875,12 +1919,12 @@
                     }
                     p {
                         color: #000000;
-                        margin-top: 9px;
+                        margin-top: 10px;
                         width: 100%;
                         height: 100%;
                         text-align: center;
                         font-family: Unbounded;
-                        font-size: 0.60em;
+                        font-size: 0.63em;
                         font-style: normal;
                         font-weight: 700;
                     }
@@ -1890,7 +1934,9 @@
     }
     .block2 {
         .main2 {
+            margin-right: 0;
             #text-m {
+                margin-left: 0px;
                 flex-direction: column;
                 display: flex;
                 align-items: flex-start;
@@ -1913,8 +1959,13 @@
                 .cart1{
                     border-radius: 20px;
                     margin-bottom: 20px;
-                    width: 290px;
+                    background: url("../adaptive/img-mobile/cart1-mobile.png") no-repeat !important;
+                    width: 330px;
                     height: 454.786px;
+                    &:hover {
+                        transform: scale(1.1);
+                        background: url("../adaptive/img-mobile/cart1-mobile-selected.png") !important;
+                    }
                     .txt {
                         .number {
                             padding: 40px 30px;
@@ -1927,30 +1978,41 @@
                         }
                         .m-text {
                             color: #FFF;
-                            font-feature-settings: 'dlig' on;
+                            width: 300px;
                             font-family: Unbounded;
                             padding: 10px 30px;
-                            margin-top: 115px;
+                            margin-top: 185px;
                             font-size: 1.4em;
                             font-style: normal;
                             font-weight: 700;
                             line-height: 28px;
                         }
                         .text {
+                            width: 300px;
                             color: #FFF;
                             font-family: Montserrat;
-                            font-size: 1.338em;
+                            font-size: 1em;
                             font-style: normal;
                             padding: 0px 30px;
                             font-weight: 300;
-                            line-height: 25px
+                            line-height: 20px
+                        }
+                        .text br {
+                            display: none;
                         }
                     }
                 }
                 .cart2{
+                    margin-left: 0px;
                     border-radius: 20px;
-                    width: 290px;
+                    background: url("../adaptive/img-mobile/cart2-mobile.png") no-repeat !important;
+                    width: 330px;
+                    margin-bottom: 20px;
                     height: 454.786px;
+                    &:hover {
+                        transform: scale(1.1);
+                        background: url("../adaptive/img-mobile/cart2-mobile-selected.png") !important;
+                    }
                     .txt {
                         .number {
                             padding: 40px 30px;
@@ -1966,7 +2028,7 @@
                             font-feature-settings: 'dlig' on;
                             font-family: Unbounded;
                             padding: 10px 30px;
-                            margin-top: 110px;
+                            margin-top: 185px;
                             font-size: 1.4em;
                             font-style: normal;
                             font-weight: 700;
@@ -1975,18 +2037,27 @@
                         .text {
                             color: #FFF;
                             font-family: Montserrat;
-                            font-size: 1.338em;
+                            font-size: 1em;
                             font-style: normal;
                             padding: 0px 30px;
                             font-weight: 300;
-                            line-height: 25px
+                            line-height: 20px
+                        }
+                        .text br {
+                            display: none;
                         }
                     }
                 }
                 .cart3 {
-                    display: none;
+                    margin-left: 0px;
+                    display: flex;
                     border-radius: 20px;
-                    width: 271px;
+                    background: url("../adaptive/img-mobile/cart3-mobile.png") no-repeat !important;
+                    width: 330px;
+                    &:hover {
+                        transform: scale(1.1);
+                        background: url("../adaptive/img-mobile/cart3-mobile-selected.png") !important;
+                    }
                     .txt {
                         .number {
                             padding: 40px 30px;
@@ -2001,7 +2072,7 @@
                             color: #FFF;
                             font-family: Unbounded;
                             padding: 10px 30px;
-                            margin-top: 110px;
+                            margin-top: 185px;
                             font-size: 1.4em;
                             font-style: normal;
                             font-weight: 700;
@@ -2010,11 +2081,15 @@
                         .text {
                             color: #FFF;
                             font-family: Montserrat;
-                            font-size: 1.338em;
+                            font-size: 1em;
+                            width: 300px;
                             font-style: normal;
                             padding: 0px 30px;
                             font-weight: 300;
-                            line-height: 25px
+                            line-height: 20px
+                        }
+                        .text br {
+                            display: none;
                         }
                     }
                 }
@@ -2026,20 +2101,21 @@
         display: none;
     }
     .block4 {
+        margin-left: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
         overflow: hidden;
-        flex-direction: column;
         margin-bottom: -320px;
+        flex-direction: column;
         margin-top: 50px;
         .main4 {
-            margin-right: 15px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             #text-m {
+                margin-left: 5px;
                 flex-direction: column;
                 width: 90px;
                 display: flex;
@@ -2056,13 +2132,14 @@
                 }
             }
             .carts {
+                margin-right: 0px;
                 display: flex; 
                 justify-content: center; 
                 align-items: center; 
                 flex-direction: column;
                 .cart1 {
-                    width: 240px;
-                    height: 254px;
+                    width: 330px;
+                    height: 180px;
                     margin-bottom: 20px;
                     border-radius: 20px;
                     border: 1px solid #0D00FF;
@@ -2073,29 +2150,32 @@
                         color: #0D141C;
                         font-family: Unbounded;
                         padding: 25px;
-                        margin-top: -25px;
+                        margin-top: -30px;
                         font-size: 1.4em;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 28px; 
                     }
                     .inner-text {
-                        width: 390px;
+                        width: 300px;
                         color: #636363;
                         font-family: Montserrat;
                         padding: 0 25px;
                         margin-top: -15px;
-                        font-size: 1.338em;
+                        font-size: 1em;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 25px;
+                        line-height: 20px;
+                        br {
+                            display: none;
+                        }
                     }
                 }
                 .cart2 {
-                    width: 240px;
-                    height: 254px;
-                    margin-left: 10px;
+                    width: 330px;
+                    height: 180px;
                     border-radius: 20px;
+                    margin-bottom: 20px;
                     background-color: #0D00FF;
                     img {
                         display: none;
@@ -2107,50 +2187,56 @@
                         color: #ffffff;
                         font-family: Unbounded;
                         padding: 0 25px 25px 25px;
-                        margin-bottom: 5px;
-                        margin-top: 20px;
+                        margin-bottom: 0px;
+                        margin-top: 60px;
                         font-size: 1.4em;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 28px; 
                     }
                     .inner-text {
+                        width: 300px;
                         color: #ffffff;
                         font-family: Montserrat;
                         padding: 0 25px;
-                        margin-top: -20px;
-                        font-size: 1.338em;
+                        margin-top: -15px;
+                        font-size: 1em;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 25px;
+                        line-height: 20px;
+                        br {
+                            display: none;
+                        }
                     }
                 }
                 .cart3 {
-                    display: none;
-                    width: 271px;
-                    height: 254px;
-                    margin-left: 10px;
+                    width: 330px;
+                    height: 180px;
                     border-radius: 20px;
                     background: #E6E6E6;
                     .main-text {
                         color: #000000;
                         font-family: Unbounded;
                         padding: 25px;
-                        margin-bottom: 5px;
-                        margin-top: 0px;
+                        margin-bottom: 0px;
+                        margin-top: 40px;
                         font-size: 1.4em;
                         font-style: normal;
                         font-weight: 700;
                         line-height: 28px; 
                     }
                     .inner-text {
+                        width: 300px;
                         color: #000000;
                         font-family: Montserrat;
                         padding: 0 25px;
-                        font-size: 1.338em;
+                        font-size: 1em;
                         font-style: normal;
                         font-weight: 400;
-                        line-height: 25px;
+                        line-height: 20px;
+                    }
+                    br {
+                        display: none;
                     }
                 }
             }

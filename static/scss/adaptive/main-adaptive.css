@@ -1452,6 +1452,9 @@
     font-style: normal;
     font-weight: 700;
   }
+  .block2 .main2 {
+    margin-right: 0;
+  }
   .block2 .main2 #text-m {
     flex-direction: column;
     display: flex;
@@ -1476,8 +1479,13 @@
   .block2 .main2 .carts .cart1 {
     border-radius: 20px;
     margin-bottom: 20px;
-    width: 290px;
+    background: url("../adaptive/img-mobile/cart1-mobile.png") no-repeat !important;
+    width: 400px;
     height: 454.786px;
+  }
+  .block2 .main2 .carts .cart1:hover {
+    transform: scale(1.1);
+    background: url("../adaptive/img-mobile/cart1-mobile-selected.png") !important;
   }
   .block2 .main2 .carts .cart1 .txt .number {
     padding: 40px 30px;
@@ -1490,28 +1498,39 @@
   }
   .block2 .main2 .carts .cart1 .txt .m-text {
     color: #FFF;
-    font-feature-settings: "dlig" on;
+    width: 300px;
     font-family: Unbounded;
     padding: 10px 30px;
-    margin-top: 115px;
+    margin-top: 185px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .block2 .main2 .carts .cart1 .txt .text {
+    width: 300px;
     color: #FFF;
     font-family: Montserrat;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     padding: 0px 30px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block2 .main2 .carts .cart1 .txt .text br {
+    display: none;
   }
   .block2 .main2 .carts .cart2 {
+    margin-left: 0px;
     border-radius: 20px;
-    width: 290px;
+    background: url("../adaptive/img-mobile/cart2-mobile.png") no-repeat !important;
+    width: 400px;
+    margin-bottom: 20px;
     height: 454.786px;
+  }
+  .block2 .main2 .carts .cart2:hover {
+    transform: scale(1.1);
+    background: url("../adaptive/img-mobile/cart2-mobile-selected.png") !important;
   }
   .block2 .main2 .carts .cart2 .txt .number {
     padding: 40px 30px;
@@ -1527,7 +1546,7 @@
     font-feature-settings: "dlig" on;
     font-family: Unbounded;
     padding: 10px 30px;
-    margin-top: 110px;
+    margin-top: 210px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
@@ -1536,16 +1555,25 @@
   .block2 .main2 .carts .cart2 .txt .text {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     padding: 0px 30px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block2 .main2 .carts .cart2 .txt .text br {
+    display: none;
   }
   .block2 .main2 .carts .cart3 {
-    display: none;
+    margin-left: 0px;
+    display: flex;
     border-radius: 20px;
-    width: 271px;
+    background: url("../adaptive/img-mobile/cart3-mobile.png") no-repeat !important;
+    width: 400px;
+  }
+  .block2 .main2 .carts .cart3:hover {
+    transform: scale(1.1);
+    background: url("../adaptive/img-mobile/cart3-mobile-selected.png") !important;
   }
   .block2 .main2 .carts .cart3 .txt .number {
     padding: 40px 30px;
@@ -1560,7 +1588,7 @@
     color: #FFF;
     font-family: Unbounded;
     padding: 10px 30px;
-    margin-top: 110px;
+    margin-top: 180px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
@@ -1569,16 +1597,21 @@
   .block2 .main2 .carts .cart3 .txt .text {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 1.338em;
+    font-size: 1em;
+    width: 350px;
     font-style: normal;
     padding: 0px 30px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block2 .main2 .carts .cart3 .txt .text br {
+    display: none;
   }
   .block3 {
     display: none;
   }
   .block4 {
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1588,13 +1621,13 @@
     margin-top: 50px;
   }
   .block4 .main4 {
-    margin-right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .block4 .main4 #text-m {
+    margin-left: 10px;
     flex-direction: column;
     width: 90px;
     display: flex;
@@ -1611,14 +1644,16 @@
     line-height: 28px;
   }
   .block4 .main4 .carts {
+    margin-right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .block4 .main4 .carts .cart1 {
-    width: 240px;
-    height: 254px;
+    width: -moz-fit-content;
+    width: fit-content;
+    height: 180px;
     margin-bottom: 20px;
     border-radius: 20px;
     border: 1px solid #0D00FF;
@@ -1630,7 +1665,7 @@
     color: #0D141C;
     font-family: Unbounded;
     padding: 25px;
-    margin-top: -25px;
+    margin-top: -30px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
@@ -1642,16 +1677,21 @@
     font-family: Montserrat;
     padding: 0 25px;
     margin-top: -15px;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block4 .main4 .carts .cart1 .inner-text br {
+    display: none;
   }
   .block4 .main4 .carts .cart2 {
-    width: 240px;
-    height: 254px;
-    margin-left: 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 10px;
+    height: 180px;
     border-radius: 20px;
+    margin-bottom: 20px;
     background-color: #0D00FF;
   }
   .block4 .main4 .carts .cart2 img {
@@ -1664,28 +1704,33 @@
     color: #ffffff;
     font-family: Unbounded;
     padding: 0 25px 25px 25px;
-    margin-bottom: 5px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 75px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .block4 .main4 .carts .cart2 .inner-text {
+    width: 390px;
     color: #ffffff;
     font-family: Montserrat;
     padding: 0 25px;
-    margin-top: -20px;
-    font-size: 1.338em;
+    margin-top: -15px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block4 .main4 .carts .cart2 .inner-text br {
+    display: none;
   }
   .block4 .main4 .carts .cart3 {
-    display: none;
-    width: 271px;
-    height: 254px;
-    margin-left: 10px;
+    display: flex;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 10px;
+    height: 180px;
     border-radius: 20px;
     background: #E6E6E6;
   }
@@ -1693,21 +1738,25 @@
     color: #000000;
     font-family: Unbounded;
     padding: 25px;
-    margin-bottom: 5px;
-    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 55px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .block4 .main4 .carts .cart3 .inner-text {
+    width: 390px;
     color: #000000;
     font-family: Montserrat;
     padding: 0 25px;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block4 .main4 .carts .cart3 br {
+    display: none;
   }
   .block4 .main4 #img {
     display: none;
@@ -1721,7 +1770,7 @@
 @media screen and (max-width: 430px) {
   .block1 .main {
     width: 330px;
-    height: 360px;
+    height: 340px;
     border-radius: 20px;
   }
   .block1 .main .main-text {
@@ -1774,7 +1823,7 @@
     height: 100%;
     text-align: center;
     font-family: Unbounded;
-    font-size: 0.6em;
+    font-size: 0.63em;
     font-style: normal;
     font-weight: 700;
   }
@@ -1797,16 +1846,20 @@
   }
   .block1 .main .buttons .button-ai p {
     color: #000000;
-    margin-top: 9px;
+    margin-top: 10px;
     width: 100%;
     height: 100%;
     text-align: center;
     font-family: Unbounded;
-    font-size: 0.6em;
+    font-size: 0.63em;
     font-style: normal;
     font-weight: 700;
   }
+  .block2 .main2 {
+    margin-right: 0;
+  }
   .block2 .main2 #text-m {
+    margin-left: 0px;
     flex-direction: column;
     display: flex;
     align-items: flex-start;
@@ -1830,8 +1883,13 @@
   .block2 .main2 .carts .cart1 {
     border-radius: 20px;
     margin-bottom: 20px;
-    width: 290px;
+    background: url("../adaptive/img-mobile/cart1-mobile.png") no-repeat !important;
+    width: 330px;
     height: 454.786px;
+  }
+  .block2 .main2 .carts .cart1:hover {
+    transform: scale(1.1);
+    background: url("../adaptive/img-mobile/cart1-mobile-selected.png") !important;
   }
   .block2 .main2 .carts .cart1 .txt .number {
     padding: 40px 30px;
@@ -1844,28 +1902,39 @@
   }
   .block2 .main2 .carts .cart1 .txt .m-text {
     color: #FFF;
-    font-feature-settings: "dlig" on;
+    width: 300px;
     font-family: Unbounded;
     padding: 10px 30px;
-    margin-top: 115px;
+    margin-top: 185px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .block2 .main2 .carts .cart1 .txt .text {
+    width: 300px;
     color: #FFF;
     font-family: Montserrat;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     padding: 0px 30px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block2 .main2 .carts .cart1 .txt .text br {
+    display: none;
   }
   .block2 .main2 .carts .cart2 {
+    margin-left: 0px;
     border-radius: 20px;
-    width: 290px;
+    background: url("../adaptive/img-mobile/cart2-mobile.png") no-repeat !important;
+    width: 330px;
+    margin-bottom: 20px;
     height: 454.786px;
+  }
+  .block2 .main2 .carts .cart2:hover {
+    transform: scale(1.1);
+    background: url("../adaptive/img-mobile/cart2-mobile-selected.png") !important;
   }
   .block2 .main2 .carts .cart2 .txt .number {
     padding: 40px 30px;
@@ -1881,7 +1950,7 @@
     font-feature-settings: "dlig" on;
     font-family: Unbounded;
     padding: 10px 30px;
-    margin-top: 110px;
+    margin-top: 185px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
@@ -1890,16 +1959,25 @@
   .block2 .main2 .carts .cart2 .txt .text {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     padding: 0px 30px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block2 .main2 .carts .cart2 .txt .text br {
+    display: none;
   }
   .block2 .main2 .carts .cart3 {
-    display: none;
+    margin-left: 0px;
+    display: flex;
     border-radius: 20px;
-    width: 271px;
+    background: url("../adaptive/img-mobile/cart3-mobile.png") no-repeat !important;
+    width: 330px;
+  }
+  .block2 .main2 .carts .cart3:hover {
+    transform: scale(1.1);
+    background: url("../adaptive/img-mobile/cart3-mobile-selected.png") !important;
   }
   .block2 .main2 .carts .cart3 .txt .number {
     padding: 40px 30px;
@@ -1914,7 +1992,7 @@
     color: #FFF;
     font-family: Unbounded;
     padding: 10px 30px;
-    margin-top: 110px;
+    margin-top: 185px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
@@ -1923,32 +2001,37 @@
   .block2 .main2 .carts .cart3 .txt .text {
     color: #FFF;
     font-family: Montserrat;
-    font-size: 1.338em;
+    font-size: 1em;
+    width: 300px;
     font-style: normal;
     padding: 0px 30px;
     font-weight: 300;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block2 .main2 .carts .cart3 .txt .text br {
+    display: none;
   }
   .block3 {
     display: none;
   }
   .block4 {
+    margin-left: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    flex-direction: column;
     margin-bottom: -320px;
+    flex-direction: column;
     margin-top: 50px;
   }
   .block4 .main4 {
-    margin-right: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
   .block4 .main4 #text-m {
+    margin-left: 5px;
     flex-direction: column;
     width: 90px;
     display: flex;
@@ -1965,14 +2048,15 @@
     line-height: 28px;
   }
   .block4 .main4 .carts {
+    margin-right: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
   }
   .block4 .main4 .carts .cart1 {
-    width: 240px;
-    height: 254px;
+    width: 330px;
+    height: 180px;
     margin-bottom: 20px;
     border-radius: 20px;
     border: 1px solid #0D00FF;
@@ -1984,28 +2068,31 @@
     color: #0D141C;
     font-family: Unbounded;
     padding: 25px;
-    margin-top: -25px;
+    margin-top: -30px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .block4 .main4 .carts .cart1 .inner-text {
-    width: 390px;
+    width: 300px;
     color: #636363;
     font-family: Montserrat;
     padding: 0 25px;
     margin-top: -15px;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block4 .main4 .carts .cart1 .inner-text br {
+    display: none;
   }
   .block4 .main4 .carts .cart2 {
-    width: 240px;
-    height: 254px;
-    margin-left: 10px;
+    width: 330px;
+    height: 180px;
     border-radius: 20px;
+    margin-bottom: 20px;
     background-color: #0D00FF;
   }
   .block4 .main4 .carts .cart2 img {
@@ -2018,28 +2105,30 @@
     color: #ffffff;
     font-family: Unbounded;
     padding: 0 25px 25px 25px;
-    margin-bottom: 5px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 60px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .block4 .main4 .carts .cart2 .inner-text {
+    width: 300px;
     color: #ffffff;
     font-family: Montserrat;
     padding: 0 25px;
-    margin-top: -20px;
-    font-size: 1.338em;
+    margin-top: -15px;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block4 .main4 .carts .cart2 .inner-text br {
+    display: none;
   }
   .block4 .main4 .carts .cart3 {
-    display: none;
-    width: 271px;
-    height: 254px;
-    margin-left: 10px;
+    width: 330px;
+    height: 180px;
     border-radius: 20px;
     background: #E6E6E6;
   }
@@ -2047,21 +2136,25 @@
     color: #000000;
     font-family: Unbounded;
     padding: 25px;
-    margin-bottom: 5px;
-    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 40px;
     font-size: 1.4em;
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
   }
   .block4 .main4 .carts .cart3 .inner-text {
+    width: 300px;
     color: #000000;
     font-family: Montserrat;
     padding: 0 25px;
-    font-size: 1.338em;
+    font-size: 1em;
     font-style: normal;
     font-weight: 400;
-    line-height: 25px;
+    line-height: 20px;
+  }
+  .block4 .main4 .carts .cart3 br {
+    display: none;
   }
   .block4 .main4 #img {
     display: none;
